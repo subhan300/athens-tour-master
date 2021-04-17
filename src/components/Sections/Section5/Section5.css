@@ -4,3 +4,13 @@ padding-top:10px;padding-left: 10px;
 }
 
 
+#more{display: none;}
+#moreb {display: none;}
+
+.treeView{
+    display:flex;justify-content: space-between;
+}
+
+.left{
+    flex:12;border:2px solid blue;display: flex;
+}
