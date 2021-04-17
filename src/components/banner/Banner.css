@@ -1,12 +1,12 @@
 .banner{
     padding-top: 4%;
-    background-color:#5894A1; 
-    display:flex;justify-content: space-around;
+    display:flex;
+    justify-content: space-around;
     align-items:center;
     padding-bottom: 3%;  
     flex-wrap: wrap;
-    
-}
+background: transparent ;
+  }
 
 
 

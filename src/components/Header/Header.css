@@ -1,7 +1,7 @@
 .main_header{
     display:flex;justify-content:space-around;
     /* border: 2px solid blue; */
-    background-color:#5894A1;
+    background-color:transparent;
     padding: 20px;
 }
 .header_center{

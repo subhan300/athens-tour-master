@@ -13,11 +13,10 @@ function Main() {
     return (
         <div>
         
-               <Header />
-               <Banner />
-
-
-          
+            <div className="bg__main">
+                <Header />
+                <Banner />
+            </div>
             <Section1  />
             <Section2 />
             <Section3 />
