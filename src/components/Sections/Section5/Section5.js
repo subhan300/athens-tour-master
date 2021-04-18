@@ -2,6 +2,9 @@ import React from 'react'
 import "./Section5.css"
 import TreeView from "./TreeView"
 import Slider from "./Slider"
+// import Question from "./Ask_component"
+import Terms from "./Terms"
+
 function Section5() {
     function myFunction() {
         var dots = document.getElementById("dots");
@@ -45,7 +48,9 @@ function Section5() {
                 read more
               </span>
             </p>
-            <TreeView/>         
+            <TreeView/>     
+            <Terms />         
+            {/* <Question  /> */}
           </div>
         <div>  
               {/* <h1 style={{color:"grey"}}>What you can expect</h1> */}

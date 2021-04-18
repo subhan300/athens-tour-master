@@ -2,11 +2,11 @@ import React from 'react'
 import Question from "./Ask_component"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-function TreeView() {
-  function myFunctionb() {
-    var dots = document.getElementById("dotsb");
-    var moreText = document.getElementById("moreb");
-    var btnText = document.getElementById("myBtnb");
+function Terms() {
+  function myFunctionc() {
+    var dots = document.getElementById("dotsc");
+    var moreText = document.getElementById("morec");
+    var btnText = document.getElementById("myBtnc");
     console.log(btnText,"text")
   
     if (dots.style.display === "none") {
@@ -22,15 +22,15 @@ function TreeView() {
 
   return (
     <div style={{display:"flex",justifyContent:"space-between"}}>
-            <p style={{color:"black",fontSize:"25px",marginTop:"8px",fontWeight:"bold"}}>
-                Frequently Asked<span id="dotsb">?</span>
+            <p style={{color:"black",fontSize:"24px",marginTop:"8px",fontWeight:"bold"}}>
+                Terms Of Services<span id="dotsc" style={{color:"white"}}>.</span>
            
-              <span id="moreb">
+              <span id="morec" >
                    <Question />
               </span>
             
             </p>
-            <div  style={{color:"black",fontSize:"13px",flex:.3}} onClick={()=>{myFunctionb()}} id="myBtnb">
+            <div  style={{color:"black",fontSize:"13px",flex:.3}} onClick={()=>{myFunctionc()}} id="myBtnc">
                 Expand &nbsp;<span style={{color:"black"}}><ExpandMoreIcon /></span>
             </div>
 
@@ -38,5 +38,4 @@ function TreeView() {
   )
 }
 
-export default TreeView
-
+export default Terms
