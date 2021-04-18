@@ -7,7 +7,7 @@ import InputTextField2 from "./InputTextFiled2"
 import Button from '@material-ui/core/Button'
 function Section2() {
     return (
-        <div  className="section2_main">
+        <div  className="section2_main" id='stops'>
            <div className="section2_components" id="section_component_left">
                 
                 {[0,1,2,3].map((val)=><Cards />)}

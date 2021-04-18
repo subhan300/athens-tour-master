@@ -7,7 +7,7 @@ const Section3=()=>{
     
     return(<>
     
-    <div className="section3_main">
+    <div className="section3_main" id='about'>
 
         <div className="section3_left">
 
