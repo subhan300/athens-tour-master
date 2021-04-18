@@ -21,8 +21,9 @@ function TreeView() {
   }
 
   return (
-    <div style={{display:"flex",justifyContent:"space-between"}}>
-            <p style={{color:"black",fontSize:"25px",marginTop:"8px",fontWeight:"bold"}}>
+    <div style={{display:"flex",justifyContent:"space-between"}}   >
+           <div>
+           <p style={{color:"black",fontSize:"25px",marginTop:"8px",fontWeight:"bold"}}>
                 Frequently Asked<span id="dotsb">?</span>
            
               <span id="moreb">
@@ -30,7 +31,9 @@ function TreeView() {
               </span>
             
             </p>
-            <div  style={{color:"black",fontSize:"13px",flex:.3}} onClick={()=>{myFunctionb()}} id="myBtnb">
+           </div>
+            <div onClick={()=>{myFunctionb()}} style={{flex:.7}}></div>
+            <div  style={{color:"black",fontSize:"13px",flex:.3}}  id="myBtnb" onClick={()=>{myFunctionb()}} >
                 Expand &nbsp;<span style={{color:"black"}}><ExpandMoreIcon /></span>
             </div>
 

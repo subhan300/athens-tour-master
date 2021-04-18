@@ -21,7 +21,9 @@ function Terms() {
   }
 
   return (
-    <div style={{display:"flex",justifyContent:"space-between"}}>
+ <div>
+      <div style={{display:"flex",justifyContent:"space-between"}}  >
+            <div  >
             <p style={{color:"black",fontSize:"24px",marginTop:"8px",fontWeight:"bold"}}>
                 Terms Of Services<span id="dotsc" style={{color:"white"}}>.</span>
            
@@ -30,11 +32,14 @@ function Terms() {
               </span>
             
             </p>
-            <div  style={{color:"black",fontSize:"13px",flex:.3}} onClick={()=>{myFunctionc()}} id="myBtnc">
-                Expand &nbsp;<span style={{color:"black"}}><ExpandMoreIcon /></span>
+            </div>
+            <div onClick={()=>{myFunctionc()}} style={{flex:.7}}></div>
+            <div  onClick={()=>{myFunctionc()}}  style={{color:"black",fontSize:"13px",flex:.3}}  id="myBtnc">
+                Expand &nbsp;<span style={{color:"black"}} ><ExpandMoreIcon /></span>
             </div>
 
     </div>
+ </div>
   )
 }
 
