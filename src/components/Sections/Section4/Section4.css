@@ -21,7 +21,9 @@
 .NOT{
  opacity: .5;
 }
-
+.review{
+    display: flex;
+}
 @media screen and (max-width: 580px) {
     .box{
         margin-top:10px;
