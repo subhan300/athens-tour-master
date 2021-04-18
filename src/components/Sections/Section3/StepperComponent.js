@@ -69,7 +69,7 @@ export default function VerticalLinearStepper() {
           <StepLabel>
 Meeting Point</StepLabel>
             <StepContent>
-            <p>Panepistimo- Athen</p>
+            <div>Panepistimo- Athen</div>
             </StepContent>
           </Step>
 
@@ -77,12 +77,13 @@ Meeting Point</StepLabel>
             <StepLabel >
 
      <div style={{marginTop:"30px"}}> 
-     <p style={{fontSize:"21px"}}>   Greek Gods & Philosophers<br></br>
+     <div style={{fontSize:"21px"}}>   Greek Gods & Philosophers
+     </div>
 
-        <span style={{fontSize:"16px"}}>  Walk along the trilogy of buildings representing the Greek Gods and philosophers of Greece</span>
+        <div style={{fontSize:"16px"}}>  Walk along the trilogy of buildings representing the Greek Gods and philosophers of Greece</div>
         
        
-   </p>
+
        
 </div>
 
@@ -95,11 +96,11 @@ Meeting Point</StepLabel>
 
 
 <div>
-<p style={{fontSize:"22px",paddingTop:"100px"}}>
-All About Hermes<br></br>
-<span style={{fontSize:"17px"}}>Stroll along the former street of the stock market and hear the story of God of commerce</span>
-</p>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is<br></br> simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting<br></br>industry.
+<div style={{fontSize:"22px",paddingTop:"30px"}}>
+All About Hermes
+
+</div>
+<div style={{fontSize:"17px"}}>Stroll along the former street of the stock market and hear the story of God of commerce</div>
 </div>
 
 

@@ -10,3 +10,10 @@
 .label:focus {
     color: #ffff;
 }
+.MuiStepContent-root {
+   border-left: 0px !important;
+}
+
+.MuiStepConnector-lineVertical {
+    min-height: 45px !important;
+}
