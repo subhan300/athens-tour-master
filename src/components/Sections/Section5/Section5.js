@@ -25,7 +25,7 @@ function Section5() {
   
 
     return (
-        <div className="section5">
+        <div className="section5" id='questions'>
           <div>  
               <h1 style={{color:"grey"}}>What you can expect</h1>
               <div>

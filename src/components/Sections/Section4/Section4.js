@@ -2,7 +2,7 @@ import React from 'react'
 import "./Section4.css"
 function Section4() {
     return (
-        <div className="section4">
+        <div className="section4" id='reviews'>
               <div>
                   <h3 style={{marginLeft:"5px",paddingBottom:'18px'}}>Travelere's review</h3>
                  <div className="main_box">

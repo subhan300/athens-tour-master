@@ -59,6 +59,13 @@
     text-decoration:none !important;
 }
 
+#menu-center .active{
+    border: 0 !important;
+}
+#menu-center .active span{
+    color:#71bfaa;
+}
+
 @media only screen and (max-width: 700px) {
     .section1_right {
         padding-right: 20px;
@@ -89,4 +96,7 @@
         visibility: none;
     }
 } 
+
+
+
 
