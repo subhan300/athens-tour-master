@@ -37,7 +37,7 @@ function Section4() {
                         </div>
             </div>
                     
-          <p style={{paddingTop:"10px",color:"grey"}}>We had a great time with Manos. He is knowledgeable and entertaining. Ile<br></br>could easily switch languages to explain things to my husband in Italian.</p>
+          <p style={{paddingTop:"10px",color:"grey"}} className="review_text">We had a great time with Manos. He is knowledgeable and entertaining. Ile<br></br>could easily switch languages to explain things to my husband in Italian.</p>
            {/* 1 show abouve review */}
            <div id="mored">
                  {[1,2,3].map((val)=>{return(
@@ -51,7 +51,7 @@ function Section4() {
                         </div>
                     </div>
                     
-               <span id="dotsd"></span>     <p style={{paddingTop:"10px",color:"grey"}}>We had a great time with Manos. He is knowledgeable and entertaining. Ile<br></br>could easily switch languages to explain things to my husband in Italian.</p>
+               <span id="dotsd"></span>     <p className="review_text" style={{paddingTop:"10px",color:"grey"}}>We had a great time with Manos. He is knowledgeable and entertaining. Ile<br></br>could easily switch languages to explain things to my husband in Italian.</p>
 
 
 

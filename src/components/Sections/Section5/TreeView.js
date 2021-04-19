@@ -2,6 +2,7 @@ import React from 'react'
 import Question from "./Ask_component"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import "./Section5.css"
 function TreeView() {
   function myFunctionb() {
     var dots = document.getElementById("dotsb");
@@ -21,7 +22,7 @@ function TreeView() {
   }
 
   return (
-    <div style={{display:"flex",justifyContent:"space-between"}}   >
+    <div className="tree" style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap"}}   >
            <div>
            <p style={{color:"black",fontSize:"25px",marginTop:"8px",fontWeight:"bold"}}>
                 Frequently Asked<span id="dotsb">?</span>
@@ -32,10 +33,12 @@ function TreeView() {
             
             </p>
            </div>
-            <div onClick={()=>{myFunctionb()}} style={{flex:.7}}></div>
-            <div  style={{color:"black",fontSize:"13px",flex:.3}}  id="myBtnb" onClick={()=>{myFunctionb()}} >
+            <div onClick={()=>{myFunctionb()}} style={{flex:.7}}  className="FT"></div>
+
+            <div  style={{color:"black",fontSize:"13px",flex:.3}} className="expand"  id="myBtnb" onClick={()=>{myFunctionb()}} >
                 Expand &nbsp;<span style={{color:"black"}}><ExpandMoreIcon /></span>
             </div>
+            <div style={{flex:.1,color:"white"}} className="right_adjust">end</div>
 
     </div>
   )

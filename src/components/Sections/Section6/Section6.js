@@ -3,7 +3,7 @@ import "./Section6.css"
 import Card from "./Card"
 import Button from '@material-ui/core/Button';
 import TransitionsModal from "./Modal"
-
+// import ImageSlider from "./ImageSlider"
 function Section6() {
     return (
         <div className="section6">
@@ -16,7 +16,8 @@ function Section6() {
          
 
              </div>
-         
+             {/* <div style={{margintop:"6px"}}> <ImageSlider /></div> */}
+              
             <div style={{marginTop:"50px"}}>  <Button variant="contained" style={{fontSize:"19px",color:"grey",backgroundColor:"#FAFAFA",width:"290px",height:"50px"}}>All Rides</Button></div>
             <div style={{marginTop:"90px"}}><h1 style={{color:"gray"}}>Questions Left?</h1>
             <hr></hr>

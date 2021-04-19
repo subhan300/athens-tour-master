@@ -2,6 +2,7 @@ import React from 'react'
 import Question from "./Ask_component"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import "./Section5.css"
 function Terms() {
   function myFunctionc() {
     var dots = document.getElementById("dotsc");
@@ -33,10 +34,11 @@ function Terms() {
             
             </p>
             </div>
-            <div onClick={()=>{myFunctionc()}} style={{flex:.7}}></div>
-            <div  onClick={()=>{myFunctionc()}}  style={{color:"black",fontSize:"13px",flex:.3}}  id="myBtnc">
+            <div onClick={()=>{myFunctionc()}} style={{flex:.7}} className="FT"></div>
+            <div  onClick={()=>{myFunctionc()}}  style={{color:"black",fontSize:"13px",flex:.3}} className="expand"  id="myBtnc">
                 Expand &nbsp;<span style={{color:"black"}} ><ExpandMoreIcon /></span>
             </div>
+            <div style={{flex:.1,color:"white"}} className="right_adjust">end</div>
 
     </div>
  </div>

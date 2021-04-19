@@ -7,6 +7,7 @@ import StepContent from '@material-ui/core/StepContent';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import Data from "../Section2/data.json"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,6 +46,22 @@ function getStepContent(step) {
 }
 
 export default function VerticalLinearStepper() {
+  function myFunctione() {
+    var dots = document.getElementById("dotse");
+    var moreText = document.getElementById("moree");
+    var btnText = document.getElementById("myBtne");
+    console.log(btnText,"text")
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "flex";
+    }
+  }
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
@@ -73,40 +90,27 @@ Meeting Point</StepLabel>
             </StepContent>
           </Step>
 
-          <Step>
-            <StepLabel >
+          {Data.data.map(val=>{return(
+              <Step>
+              <StepLabel >
+              
+              <div style={{marginTop:"30px"}}> 
+              <div style={{fontSize:"21px"}}>   {val.title}
+              </div>
+              
+          <div style={{fontSize:"16px"}}>  {val.description}</div>
+              
+              
+              
+              
+              </div>
+              
+              </StepLabel>
+              
+              </Step>
+          )})}
 
-     <div style={{marginTop:"30px"}}> 
-     <div style={{fontSize:"21px"}}>   Greek Gods & Philosophers
-     </div>
-
-        <div style={{fontSize:"16px"}}>  Walk along the trilogy of buildings representing the Greek Gods and philosophers of Greece</div>
         
-       
-
-       
-</div>
-
-</StepLabel>
-         
-          </Step>
-          
-          <Step>
-            <StepLabel >
-
-
-<div>
-<div style={{fontSize:"22px",paddingTop:"30px"}}>
-All About Hermes
-
-</div>
-<div style={{fontSize:"17px"}}>Stroll along the former street of the stock market and hear the story of God of commerce</div>
-</div>
-
-
-</StepLabel>
-          
-          </Step>
       </Stepper>
       {/* {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
@@ -119,3 +123,4 @@ All About Hermes
     </div>
   );
 }
+

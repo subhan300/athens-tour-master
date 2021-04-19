@@ -30,5 +30,6 @@
         width:320px;
         text-align: center;
         }
+        .review,.review_text{padding-left: 6px;}
      
   }

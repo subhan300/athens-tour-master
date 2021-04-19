@@ -3,6 +3,7 @@ import React from "react"
 import Stepper from "./StepperComponent"
 import "./Section3.css"
 
+
 const Section3=()=>{
     
     return(<>
@@ -11,7 +12,7 @@ const Section3=()=>{
 
         <div className="section3_left">
 
-            <h3 style={{color:"grey"}}>About the ride</h3>
+            <h3 className="about" style={{color:"grey"}}>About the ride</h3>
             <div>
                 <Stepper />
             </div> 
