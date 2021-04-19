@@ -17,7 +17,7 @@
 .MuiStepConnector-lineVertical {
     min-height: 45px !important;
 }
-
+#moref{display:none}
 
 @media only screen and (max-width:865px) {
     .about{

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import "./Section2.css"
 import Cards from "./Card"
 import Card from '@material-ui/core/Card';
@@ -6,22 +6,28 @@ import InputTextField from "./InputTextField"
 import InputTextField2 from "./InputTextFiled2"
 import Button from '@material-ui/core/Button'
 import Data from "./data.json";
+import {GlobalContext} from "../../GlobalContext/GlobalContext"
 
 function Section2() {
+    const {initial_value}=useContext(GlobalContext);
+  
     function myFunctione() {
         var dots = document.getElementById("dotse");
         var moreText = document.getElementById("moree");
         var btnText = document.getElementById("myBtne");
         console.log(btnText,"text")
+        
       
         if (dots.style.display === "none") {
           dots.style.display = "inline";
           btnText.innerHTML = "Read more";
           moreText.style.display = "none";
+          initial_value[1](false)
         } else {
           dots.style.display = "none";
           btnText.innerHTML = "Read less";
           moreText.style.display = "flex";
+          initial_value[1](true)
         }
       }
   
@@ -38,7 +44,7 @@ function Section2() {
            <div><Cards title={"Greek Gods & Philosophers"} description={"Walk along the trilogy of buildings representing the Greek Gods and philosophers of Greece"} /></div>
                 
             <span id="dotse"></span>
-            <div id="moree" style={{display:"none",textAlign:"center" }}>{Data.data.map((val)=><Cards title={val.title} description={val.description} />)}</div>
+            <div id="moree" style={{display:"none", }}>{Data.data.map((val)=><Cards title={val.title} description={val.description} />)}</div>
 
      
                                  

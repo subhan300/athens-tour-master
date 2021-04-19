@@ -9,10 +9,13 @@ import Section5 from "../Sections/Section5/Section5"
 import Section6 from "../Sections/Section6/Section6"
 import Footer from "../Footer/Footer"
 import "./main.css"
+import {GlobalProvider} from "../GlobalContext/GlobalContext"
 function Main() {
     return (
         <div>
         
+            <GlobalProvider>
+
             <div className="bg__main">
                 <Header />
                 <Banner />
@@ -24,6 +27,8 @@ function Main() {
             <Section5 />
             <Section6 />
             <Footer />
+
+            </GlobalProvider>
         </div>
     )
 }
