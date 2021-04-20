@@ -5,7 +5,7 @@ export const GlobalContext = createContext(initialState);
 
 
 export const GlobalProvider = ({ children }) => {
-    const [state, dispatch] =useReducer(AppReducer, initialState);
+    // const [state, dispatch] =useReducer(AppReducer, initialState);
     const initial_value=useState(false)
     
         // function Load_more() {
